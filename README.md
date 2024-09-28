@@ -23,7 +23,7 @@ go build -o generator
 ### Docker
 
 ```shell
-docker run --rm -v <path/to/input>:/sample.mp4 -v <path/to/output/folder>:/output bod8/video-thumbnail-sprite-generator:latest /sample.mp4 <interval> <maxWidth> <maxHeight> <maxColumns> /output/<output>
+docker run --rm -v <path/to/input>:/sample.mp4 -v <path/to/output/folder>:/output bod8/video-thumbnail-sprite-generator-cli:latest /sample.mp4 <interval> <maxWidth> <maxHeight> <maxColumns> /output/<output>
 ```
 
 ### Options
