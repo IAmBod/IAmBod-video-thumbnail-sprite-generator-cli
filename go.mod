@@ -2,7 +2,7 @@ module video-thumbnail-sprite-generator-cli
 
 go 1.22
 
-require github.com/IAmBod/video-thumbnail-sprite-generator v0.0.0-20240928145532-fd557abbe2ad
+require github.com/IAmBod/video-thumbnail-sprite-generator v0.0.0-20240929120619-5f3ed6b81423
 
 require (
 	github.com/aws/aws-sdk-go v1.55.5 // indirect
