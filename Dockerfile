@@ -9,7 +9,7 @@ RUN go mod download \
 
 COPY *.go ./
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /usr/local/bin/video-thumbnail-sprite-generator
+RUN CGO_ENABLED=0 GOOS=linux go build -o /usr/local/bin/video-storybook-cli
 
 FROM builder AS test
 
@@ -17,6 +17,6 @@ RUN go test -v ./...
 
 FROM jrottenberg/ffmpeg:7-alpine
 
-COPY --from=builder /usr/local/bin/video-thumbnail-sprite-generator /usr/local/bin/video-thumbnail-sprite-generator
+COPY --from=builder /usr/local/bin/video-storybook-cli /usr/local/bin/video-storybook-cli
 
-ENTRYPOINT ["video-thumbnail-sprite-generator"]
+ENTRYPOINT ["video-storybook-cli"]

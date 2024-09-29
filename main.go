@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	vtsg "github.com/IAmBod/video-thumbnail-sprite-generator"
+	vtsg "github.com/IAmBod/video-storybook"
 	"log"
 	"math"
 	"os"
